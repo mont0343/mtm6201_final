@@ -1,0 +1,200 @@
+
+/* CUSTOM CSS, APPLIED NO MATTER THE SCREEN SIZE */
+/* NAV RELATED */
+.nav-link{
+    color: white;
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: #3DAA97;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.navbar-nav a:hover{
+    background-color: #175C50;
+    color: white;   
+}
+
+.navbar-nav .active{
+    color: #86C64D !important;
+    background-color: #175C50;
+}
+
+.skiplinknav ul{
+    list-style-type: none;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28116, 168, 189, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler{
+    border-color: rgba(0,0,0,0);
+}
+
+/* HERO BANNER */
+.banner{
+    background: white url(../images/hero-banner.png) no-repeat center center;
+    background-size: cover;
+}
+
+/* HEADINGS & P's */
+.display-1{
+    text-shadow: 2px 2px 50px black;
+    font-family: "Inter", sans-serif;
+}
+
+.display-6{
+    color:  #07806B;
+    font-family: "Inter", sans-serif;
+}
+
+.container-xl p{
+    font-family: "Inter", sans-serif;
+}
+
+/* BREADCRUMBS */
+.breadcrumb-item a{
+    color: #86C64D;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+}
+
+.breadcrumb-item a:hover{
+    text-decoration: underline;
+}
+
+/* BUTTONS & BOOTSTRAP ICONS */
+.bi-arrow-right-circle-fill{
+    color: #86C64D;
+}
+
+.bi-arrow-right-circle-fill:hover{
+    color: #325B0D;
+}
+
+.bi-square, .bi-star, .bi-map{
+    color: #86C64D
+}
+
+.bi-envelope, .bi-card-text{
+    font-size: 2.2rem;  
+    color: #74A8BD;
+}
+
+.bi-square-fill{
+    font-size: 1.7rem;
+}
+
+/* STATISTICS PAGE RELATED STYLING */
+hr{
+    color: #86C64D;
+    border: 2px solid;
+    opacity: 100;
+}
+
+.green-square{
+    color: #2FB85E;
+}
+
+.red-square{
+    color: #ED5B5B;
+}
+
+
+/* MOBILE MEDIA QUERIES */
+@media screen and (max-width: 430px){
+    .navbar-toggler{
+        position: relative;
+        top:-60px;
+    }
+
+    .navbar-nav .bi-envelope, .bi-card-text{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+    
+    .breadcrumb a{
+        font-size: 1rem;
+    }
+
+    .navbar{
+        margin-bottom: 60px;
+    }    
+
+    .banner{
+        margin-bottom: 100px;
+    }
+
+    .bi-arrow-right-circle-fill{
+        font-size: 2.7rem;
+    }
+
+    .col-md-6 p{
+        font-size: 1.1rem;
+    }
+
+    .end-text{
+        margin-bottom: 75px;
+    }
+
+    .end-page{
+        margin-bottom: 50px;
+    }
+
+    #skiplink-jump2, #skiplinktop{
+        color: black;
+    }
+
+    .icon-dsk{
+        display:  none;
+    }
+
+    .icon-mbl{
+        font-size: 1.0rem;
+    }
+}
+
+
+/* DESKTOP MEDIA QUERIES */
+@media screen and (min-width: 431px){    
+    .navbar{
+        margin-bottom: 200px;
+    }
+
+    .banner{
+        margin-bottom: 250px;
+    }
+
+    .bi-arrow-right-circle-fill{
+        font-size: 3rem;
+    }
+
+    .col-md-6 p{
+        font-size: 1.5rem;
+    }
+
+    .row-t{
+        margin-bottom: 200px;
+    }
+    
+    .row-b{
+        margin-bottom: 50px;
+    }
+
+    #skiplink-jump2, #skiplinktop{
+        color: black;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .nav-link{
+        margin-left: 265px;
+    }
+
+    .icon-mbl{
+        display:  none;
+    }
+}
