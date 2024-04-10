@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Matthew • Home</title>
+    <title>Matthew • Daily Statistics</title>
     <!-- Bootstrap CSS Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Bootstrap Icons Link -->
@@ -15,8 +15,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
-    <!-- CSS Library 'Animate.css' Import -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <!-- Custom CSS Link -->
     <link href="css/main.css" rel="stylesheet">
   </head>
@@ -26,7 +24,7 @@
       <!-- Skip Link -->
       <nav role="navigation" class="skiplinknav">
         <ul>
-          <li class="text-center"><a href="#skiplink-jump" id="skiplinktop" aria-label="skip to this pages main content section" class="fw-bold">Skip to main content</a></li>
+          <li class="text-center"><a href="#skiplink-jump" id="skiplinktop" aria-label="Skip to this pages main content section" class="fw-bold">Skip to main content</a></li>
         </ul>
       </nav>
       <nav role="navigation" class="navbar navbar-expand-md" data-bs-theme="light">
@@ -46,13 +44,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item px-5 mx-5 py-1">
-                <a class="nav-link px-5 text-center" aria-label="Go to the tasks page" href="tasks.html">TASKS</a>
+                <a class="nav-link px-5 text-center" href="tasks.html" aria-label="Go to the tasks page">TASKS</a>
               </li>
               <li class="nav-item px-5 mx-5 py-1">
-                <a class="nav-link px-5 text-center" aria-label="Go to the hospitals map page" href="#">MAP</a>
+                <a class="nav-link px-5 text-center" href="#" aria-label="Go to the hospitals map page">MAP</a>
               </li>
               <li class="nav-item px-5 mx-5 py-1">
-                <a class="nav-link px-5 text-center" aria-label="Go to the statistics page" href="statistics.html">STATISTICS</a>
+                <a class="nav-link px-5 active text-center" href="#" aria-label="Go to the statistics page">STATISTICS</a>
               </li>
               <li>
                 <i class="bi bi-envelope mx-4"></i>
@@ -70,44 +68,63 @@
       <!-- Breadcrumb Links -->
       <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
         <ol class="breadcrumb mx-3">
-          <li class="breadcrumb-item active"><a href="#" aria-label="Go to the homepage">Home</a></li>
-          <li class="breadcrumb-item" aria-current="page"></li>
+          <li class="breadcrumb-item active"><a href="index.html" class="fw-normal" aria-label="Go to the homepage">Home</a></li>
+          <li class="breadcrumb-item" aria-current="page"><a href="statistics.html" aria-label="Go to the statistics page">Daily Statistics</a></li>
         </ol>
       </nav><!-- closes breadcrumb nav -->
-      
+
       <!-- Hero Banner -->
       <section id="banner" class="banner py-5">
-        <div class="container-xl text-light py-5">
-          <h1 role="heading" class="display-1 fw-bold animate__animated animate__fadeInLeft">Welcome back, Matthew.</h1>
+        <div class="text-light container-xl py-5">
+          <h1 role="heading" class="display-1 fw-bold">Daily Statistics</h1>
         </div>
       </section><!-- closes hero banner section -->
       
       <!-- Rows & Columns Setup For Main Content -->
-      <div class="container-xl"> 
-        <div class="row row-t"> 
-          <div class="col-md-6"> 
-            <h2 class="display-6 fw-semibold">YOUR TASKS<a href="tasks.html" aria-label="Go to the tasks page"><i class="bi bi-arrow-right-circle-fill mx-4"></i></a></h2>
-            <p class="px-4 fw-light">Active Tasks <b class="fw-bold">(3)</b></p>
-            <p class="px-4 fw-light end-text">Completed Tasks <b class="fw-bold">(0)</b></p>
+      <div class="container-xl">
+        <div class="row row-t gx-5 text-center">
+          <div class="col-md-6">
+              <h2 class="display-6 mb-3 fw-semibold" id="skiplink-jump">TASK STATISTICS</h2>
+              <hr>
+            <p class="fw-semibold fs-5 pb-3">Task completion was above average today.</p>
+            <p class="fw-light"><i class="bi bi-square-fill green-square"></i> Tasks finished</p>
+            <p class="pb-4 fw-light"><i class="bi bi-square-fill red-square"></i> Tasks unfinished</p>
+            <picture>
+              <source srcset="images/desktop/bar-chart-1.0x.png" media="(min-width: 431px)">
+              <source srcset="images/mobile/bar-chart-0.8x.png" media="(max-width: 430px)">
+              <img src="images/desktop/bar-chart-1.0x.png" alt="A bar chart showing statistics" class="py-5">
+            </picture>
           </div>
-          <div class="col-md-6"> 
-            <h2 class="display-6 fw-semibold">HOSPITAL MAP<a href="#" aria-label="Go to the hospitals map page"><i class="bi bi-arrow-right-circle-fill mx-4"></i></a></h2>
-            <p class="px-4 fw-light end-text">A floor-by-floor map</p>
+          <div class="col-md-6">
+            <h2 class="display-6 mb-3 fw-semibold">EMPLOYEE STATISTICS</h2>
+            <hr>
+            <p class="fw-semibold fs-5 pb-3">Almost all employee's were working today.</p>
+            <p class="fw-light"><i class="bi bi-square-fill green-square"></i> Employee's present</p>
+            <p class="pb-4 fw-light"><i class="bi bi-square-fill red-square"></i> Employee's absent</p>
+            <picture>
+              <source srcset="images/desktop/gauge-chart-1.0x.png" media="(min-width: 431px)">
+              <source srcset="images/mobile/gauge-chart-0.8x.png" media="(max-width: 430px)">
+              <img src="images/desktop/gauge-chart-1.0x.png" alt="A gauge chart showing statistics" class="py-5">
+            </picture>
           </div>
         </div><!-- closes .row -->
-        <div class="row row-b">
-          <div class="col-md-6">  
-            <h2 class="display-6 fw-semibold">YOUR INBOX<a href="#" aria-label="Go to the inbox page"><i class="bi bi-arrow-right-circle-fill  mx-4"></i></a></h2>
-            <p class="px-4 fw-light end-text">Message your co-workers</p>
-          </div>
-          <div class="col-md-6"> 
-            <h2 class="display-6 fw-semibold" id="skiplink-jump">TODAY'S STATISTICS<a href="statistics.html" aria-label="Go to the statistics page"><i class="bi bi-arrow-right-circle-fill mx-4"></i></a></h2>
-            <p class="px-4 fw-light end-page">See how well the hospital is running</p>
+
+        <div class="row text-center">
+          <div class="col-md-6">
+            <h2 class="display-6 mb-3 fw-semibold">ROOM STATISTICS</h2>
+            <hr>
+            <p class="fw-semibold fs-5 pb-3">Above average room service today.</p>
+            <p class="fw-light"><i class="bi bi-square-fill green-square"></i> Rooms serviced</p>
+            <p class="pb-4 fw-light"><i class="bi bi-square-fill red-square"></i> Rooms not serviced</p>
+            <picture>
+              <source srcset="images/desktop/pie-chart-1.0x.png" media="(min-width: 431px)">
+              <source srcset="images/mobile/pie-chart-0.8x.png" media="(max-width: 430px)">
+              <img src="images/desktop/pie-chart-1.0x.png" alt="A pie chart showing statistics" class="py-5">
+            </picture>
           </div>
         </div><!-- closes .row -->
       </div><!-- closes .container-xl -->
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <footer role="contentinfo">
       <nav role="navigation" class="skiplinknav">
         <ul>
