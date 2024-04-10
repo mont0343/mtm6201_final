@@ -43,7 +43,7 @@ The framework used to help build this website:
 - Bootstrap (https://getbootstrap.com/)
 
 ### LIBRARIES
-The public css library I decided to use was:
+The public CSS library I decided to use was:
 
 - Animate.css (The animation used can be seen on the homepage. This animation is in place, assuming that the user has JUST logged into the portal)
 
