@@ -190,11 +190,16 @@ hr{
         z-index: 1;
     }
 
-    .nav-link{
-        margin-left: 265px;
+    header{
+        margin-right: 150px;
     }
 
     .icon-mbl{
         display:  none;
+    }
+
+    .site-logo{
+        position: relative;
+        right: 520px;
     }
 }
